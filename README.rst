@@ -1,7 +1,7 @@
 Diazo-Bootstrap-Framework
 =========================
 
-Introcuction
+Introduction
 ------------
 
 The Diazo Bootstrap Framework allows you to easily pull the bootstrap
@@ -10,7 +10,14 @@ front-end on your web application.
 Installation
 ------------
 
+#. First we clone the repository::
 
+    $ git clone https://github.com/veit/diazo_bootstrap.git
+
+#. Than wie create the Diazo service and install the bootstrap dependencies::
+
+    $ cd diazo_bootstrap/diazo
+    $ python bootstrap.py
 
 Bootstrap-Updates
 -----------------
