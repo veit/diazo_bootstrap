@@ -18,6 +18,7 @@ Installation
 
     $ cd diazo_bootstrap/diazo
     $ python bootstrap.py
+    $ ./bin/buildout
 
 Bootstrap-Updates
 -----------------
