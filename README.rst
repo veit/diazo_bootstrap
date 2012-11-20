@@ -40,3 +40,36 @@ Later you can apply changes in the bootstrap repository with::
     $ git fetch bootstrap
     $ git merge bootstrap/master
 
+Sphinx
+======
+
+#. To create a `Sphinx <http://sphinx-doc.org/>`_-based documentation, you can
+   install it with buildout::
+
+    $ cd sphinx
+    $ python bootstrap.py
+    $ ./bin/buildout
+
+#. Then you can call the ``sphinx-quickstart`` to configure your
+   documentation::
+
+    $ ./bin/sphinx-quickstart
+
+   You have to answer some questions::
+
+    > Root path for the documentation [.]: 
+    > Separate source and build directories (y/N) [n]: y
+    > Name prefix for templates and static dir [_]: 
+    …
+
+#. Finally the documentation will be created in
+   ``${buildout:directory}/docs`` with::
+
+    $ ./bin/sphinxbuilder
+
+Further information
+-------------------
+
+- `collective.recipe.sphinxbuilder <http://pypi.python.org/pypi/collective.recipe.sphinxbuilder>`_
+- `Sphinx documentation <http://sphinx-doc.org/contents.html>`_
+
