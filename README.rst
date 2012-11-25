@@ -138,4 +138,13 @@ Plone
 
     $ ./bin/instance start
 
+   Now the Plone-Site will be available at ``http://localhost:8080/plone``. 
+
+#. Next, we start the Diazo-Proxy for our Plone-Site::
+
+    $ cd ../diazo/
+    $ ./bin/paster serve ploneproxy.ini
+
+   and the Plone-Site with the Bootstrap-Theme will be available at
+   ``http://localhost:8000``.
 
