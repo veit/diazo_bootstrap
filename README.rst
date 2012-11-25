@@ -5,9 +5,15 @@ Diazo-Bootstrap-Framework
 Introduction
 ============
 
-The Diazo-Bootstrap-Framework allows you to easily pull the `bootstrap
+The Diazo-Bootstrap-Framework allows you to pull the `bootstrap
 front-end <http://twitter.github.com/bootstrap/>`_ on your web application. 
 Therefor we use the `Diazo XSLT Generator <http://docs.diazo.org/en/latest/>`_.
+There are also two samples included for the content providers
+`Plone <http://plone.org/>`_ and `Sphinx <http://sphinx-doc.org/>`_.
+
+At last the Diazo-Bootstrap-Framework makes it easy to apply `bootstrap  
+<http://twitter.github.com/bootstrap/>`_-updates in your own project
+using ``git merge``. 
 
 Requirements
 ============
