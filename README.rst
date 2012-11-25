@@ -15,7 +15,7 @@ There are also two samples included for the content providers
 
 At last the Diazo-Bootstrap-Framework makes it easy to apply `bootstrap  
 <http://twitter.github.com/bootstrap/>`_-updates in your own project
-using ``git merge``. 
+using the the subtree merge strategy of git.
 
 Requirements
 ============
