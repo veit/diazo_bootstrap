@@ -9,6 +9,38 @@ The Diazo-Bootstrap-Framework allows you to easily pull the `bootstrap
 front-end <http://twitter.github.com/bootstrap/>`_ on your web application. 
 Therefor we use the `Diazo XSLT Generator <http://docs.diazo.org/en/latest/>`_.
 
+Requirements
+============
+
+- GCC compiler
+- Python 2.7
+- `Distribute <http://pypi.python.org/pypi/distribute>`_
+
+Operating system specific instructions
+--------------------------------------
+
+Ubuntu/Debian
+~~~~~~~~~~~~~
+
+::
+
+    $ sudo apt-get install python2.7 python2.7-dev python-setuptool build-essential 
+
+OSX
+~~~
+
+- `Install OSX development tools (XCode) <http://developer.apple.com/>`_
+- `Install Macports <http://www.macports.org/>`_
+- ::
+
+    $ sudo port install python27 py27-distribute
+
+Windows
+~~~~~~~
+
+Please read 
+`Using buildout on Windows <http://plone.org/documentation/kb/using-buildout-on-windows>`_.
+
 Installation
 ============
 
