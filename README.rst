@@ -5,8 +5,9 @@ Diazo-Bootstrap-Framework
 Introduction
 ============
 
-The Diazo Bootstrap Framework allows you to easily pull the bootstrap
-front-end on your web application.
+The Diazo-Bootstrap-Framework allows you to easily pull the `bootstrap
+front-end <http://twitter.github.com/bootstrap/>`_ on your web application. 
+Therefor we use the `Diazo XSLT Generator <http://docs.diazo.org/en/latest/>`_.
 
 Installation
 ============
