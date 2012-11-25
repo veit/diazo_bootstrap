@@ -2,6 +2,8 @@
 Diazo-Bootstrap-Framework
 =========================
 
+.. contents ::
+
 Introduction
 ============
 
