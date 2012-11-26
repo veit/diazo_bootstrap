@@ -115,6 +115,13 @@ Sphinx
     > Name prefix for templates and static dir [_]: 
     …
 
+#. Additionally we had to add the global navigation to the sidebars. Therefore
+   we edit ``sphinx/source/conf.py``::
+
+    html_sidebars = {
+       '**': ['globaltoc.html', 'localtoc.html', 'sourcelink.html', 'searchbox.html'],
+    }
+
 #. Finally the documentation will be created in
    ``${buildout:directory}/docs`` with::
 
