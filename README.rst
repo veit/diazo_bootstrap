@@ -119,7 +119,7 @@ Sphinx
    we edit ``sphinx/source/conf.py``::
 
     html_sidebars = {
-       '**': ['globaltoc.html', 'localtoc.html', 'sourcelink.html', 'searchbox.html'],
+       '**': ['globaltoc.html', 'localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'],
     }
 
 #. Finally the documentation will be created in
