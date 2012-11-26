@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <rules css:if-content=".sphinxsidebar">
+
+        <theme href="sphinxtheme.html" />
+
+        <!-- Head elements -->
+        <replace css:theme="html head title"
+                 css:content="html head title" />
+        <after css:theme-children="html head"
+               css:content="html head meta" />
+
+        <!-- Logo -->
+        <copy attributes="href"
+              css:theme=".brand"
+              css:content=".sphinxsidebarwrapper > h3 > a" />
+
+        <!-- Navigation -->
+        <replace  css:theme="#navigation ul.dropdown-menu li"
+                  css:content="#toctree li.toctree-l1"/>
+
+        <!-- Search -->
+        <copy attributes="action"
+              css:theme="#global-nav-search"
+              css:content="form.search" />
+
+        <!-- Columns -->
+        <replace css:content-children=".body"
+                 css:theme-children="#content" />
+
+        <!-- previous -->
+        <replace css:theme-children=".pager li.previous"
+                 css:content-children="#relations li.prev"
+                 css:if-content="#relations li.prev" />
+        <drop css:theme=".pager li.previous"
+              css:if-not-content="#relations li.prev" />
+
+        <!-- next -->
+        <replace css:theme-children=".pager li.next"
+                 css:content-children="#relations li.next"
+                 css:if-content="#relations li.next" />
+        <drop css:theme=".pager li.next"
+              css:if-not-content="#relations li.next" />
+
+        <!-- Footer -->
+        <copy attributes="href"
+              css:theme=".modal-footer a.top"
+              css:content="#localtoc > ul > li > a"
+              css:if-content="#localtoc > ul > li > a" />
+        <replace css:theme-children=".modal-footer .copyright"
+                 css:content-children=".footer .copyright"
+                 css:if-content=".footer .copyright" />
+        <drop css:theme=".modal-footer .copyright"
+              css:if-not-content=".footer .copyright" />
+        <replace css:theme-children=".modal-footer .updated"
+                 css:content-children=".footer .updated"
+                 css:if-content=".footer .updated" />
+        <drop css:theme=".modal-footer .updated"
+              css:if-not-content=".footer .updated" />
+        <replace css:theme-children=".modal-footer .show-sphinx"
+                 css:content-children=".footer .show-sphinx"
+                 css:if-content=".footer .show-sphinx" />
+        <drop css:theme=".modal-footer .show-sphinx"
+              css:if-not-content=".footer .show-sphinx" />
+
+    </rules>
+
+</rules>
+
