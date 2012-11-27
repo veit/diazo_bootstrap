@@ -122,10 +122,19 @@ Sphinx
        '**': ['globaltoc.html', 'localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'],
     }
 
-#. Finally the documentation will be created in
+#. Next, we will create the documentation in
    ``${buildout:directory}/docs`` with::
 
     $ ./bin/sphinxbuilder
+
+#. Finally, we start the Diazo-Proxy for our Sphinx-Docs::
+
+    $ cd ../diazo/
+    $ ./bin/paster serve sphinxproxy.ini
+
+   and the Sphinx documentation with the Bootstrap-Theme will be available at
+   ``http://localhost:9000``.
+
 
 Further information
 -------------------
