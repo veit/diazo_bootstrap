@@ -166,3 +166,43 @@ Plone
    and the Plone-Site with the Bootstrap-Theme will be available at
    ``http://localhost:8000``.
 
+Bug tracker
+===========
+
+Have a bug? Please create an issue here on GitHub that conforms with
+`necolass guidelines <https://github.com/necolas/issue-guidelines>`_:
+
+`Issues <https://github.com/veit/diazo_bootstrap/issues>`_
+
+Author
+======
+
+Veit Schiele
+
+- `github <https://github.com/veit>`_
+- `Twitter <https://twitter.com/VeitSchiele>`_
+
+Copyrights and licenses
+=======================
+
+Diazo-Bootstrap-Framework
+ Copyright 2012 Veit Schiele
+
+ Licensed under a BSD-like License.
+
+Diazo
+ Copyright Plone Foundation
+
+ Licensed under a BSD-like License.
+ 
+Bootstrap
+ Copyright 2012 Twitter, Inc.
+
+ Licensed under the `Apache License v2.0
+ <http://www.apache.org/licenses/LICENSE-2.0>`_.
+
+Buildout
+ Copyright Zope Foundation
+
+ Licensed under the Zope Public License (ZPL) Version 2.1.
+
