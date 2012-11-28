@@ -20,6 +20,7 @@ using the the subtree merge strategy of git.
 Requirements
 ============
 
+- `Git <http://git-scm.com/>`_
 - GCC compiler
 - Python 2.7
 - `Distribute <http://pypi.python.org/pypi/distribute>`_
@@ -32,7 +33,9 @@ Ubuntu/Debian
 
 ::
 
-    $ sudo apt-get install python2.7 python2.7-dev python-setuptool build-essential 
+    $ sudo apt-get install build-essential git python2.7 python2.7-dev python-setuptool
+
+Vor Ubuntu 11.04 ist statt ``git`` das Paket ``git-core`` zu installieren.
 
 OSX
 ~~~
@@ -41,7 +44,7 @@ OSX
 - `Install Macports <http://www.macports.org/>`_
 - ::
 
-    $ sudo port install python27 py27-distribute
+    $ sudo port install git-core python27 py27-distribute
 
 Windows
 ~~~~~~~
