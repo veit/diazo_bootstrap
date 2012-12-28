@@ -89,7 +89,7 @@ Bootstrap-Updates
 
     $ cd bootstrap
     $ make clean
-    $ rm -r bootstrap
+    rm -r bootstrap
 
 #. Last we build the bootstrap files again::
 
