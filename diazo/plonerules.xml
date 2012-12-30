@@ -96,6 +96,10 @@
                  css:content="#portal-breadcrumbs span#breadcrumbs-current"
                  css:if-content="#portal-breadcrumbs span#breadcrumbs-home a" />
 
+        <!-- Edit bar -->
+        <drop css:theme=".editable"
+              css:if-not-content=".documentEditable" />
+
         <!-- File -->
         <replace css:theme-children="#file ul.dropdown-menu"
                  css:content-children="#content-views"
@@ -114,8 +118,8 @@
         <replace css:theme-children="#edit ul.dropdown-menu li"
                  css:content-children="#plone-contentmenu-actions dd ul"
                  css:if-content="#plone-contentmenu-actions" />
-        <drop css:theme=".editable"
-              css:if-not-content=".documentEditable" />
+        <drop css:theme="#edit"
+              css:if-not-content="#plone-contentmenu-actions" />
 
         <!-- Display -->
         <replace css:theme-children="#display ul.dropdown-menu li"
