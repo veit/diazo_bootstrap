@@ -21,10 +21,10 @@
               css:theme=".brand"
               css:content="#portal-logo" />
 
-        <!-- Global Navigation -->
-        <replace  css:theme-children="#navigation ul.dropdown-menu li a"
-                  css:content-children=".navTreeLevel0  > li.navTreeItem > div"
-                  href="/sitemap" />
+        <!-- Global navigation -->
+        <replace css:theme-children="#globalnav .nav"
+                 css:content-children="#portal-globalnav"
+                 css:if-content="#portal-globalnav" />
 
         <!-- Search -->
         <copy attributes="action" css:theme="#global-nav-search" css:content="#portal-searchbox form" />
