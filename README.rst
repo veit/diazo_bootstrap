@@ -93,8 +93,8 @@ Bootstrap-Updates
 
 #. Last we build the bootstrap files again::
 
-    $ cd ../diazo
-    $ ./bin/buildout
+    $ PATH=../diazo/parts/nodejs/bin/:$PATH
+    $ make bootstrap
 
 Sphinx
 ======
