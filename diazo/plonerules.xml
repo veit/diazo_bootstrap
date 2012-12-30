@@ -21,45 +21,10 @@
               css:theme=".brand"
               css:content="#portal-logo" />
 
-        <!-- Navigation -->
+        <!-- Global Navigation -->
         <replace  css:theme-children="#navigation ul.dropdown-menu li a"
                   css:content-children=".navTreeLevel0  > li.navTreeItem > div"
                   href="/sitemap" />
-
-        <!-- File -->
-        <replace css:theme-children="#file ul.dropdown-menu"
-                 css:content-children="#content-views"
-                 css:if-content="#content-views" />
-        <drop css:theme="#file"
-              css:if-not-content="#content-views" />
-
-        <!-- Add -->
-        <replace css:theme-children="#add ul.dropdown-menu li"
-                 css:content-children="#plone-contentmenu-factories dd ul"
-                 css:if-content="#plone-contentmenu-factories" />
-        <drop css:theme="#add"
-              css:if-not-content="#plone-contentmenu-factories" />
-
-        <!-- Edit -->
-        <replace css:theme-children="#edit ul.dropdown-menu li"
-                 css:content-children="#plone-contentmenu-actions dd ul"
-                 css:if-content="#plone-contentmenu-actions" />
-        <drop css:theme="#edit"
-              css:if-not-content="#plone-contentmenu-actions" />
-
-        <!-- Display -->
-        <replace css:theme-children="#display ul.dropdown-menu li"
-                 css:content-children="#plone-contentmenu-display dd ul"
-                 css:if-content="#plone-contentmenu-display" />
-        <drop css:theme="#display"
-              css:if-not-content="#plone-contentmenu-display" />
-
-        <!-- State -->
-        <replace css:theme-children="#state ul.dropdown-menu li"
-                 css:content-children="#plone-contentmenu-workflow dd ul"
-                 css:if-content="#plone-contentmenu-workflow" />
-        <drop css:theme="#state"
-              css:if-not-content="#plone-contentmenu-workflow" />
 
         <!-- Search -->
         <copy attributes="action" css:theme="#global-nav-search" css:content="#portal-searchbox form" />
@@ -83,27 +48,6 @@
         <replace css:theme-children="#account ul.dropdown-menu"
                  css:content-children="#portal-personaltools dd.actionMenuContent ul"
                  css:if-content="#portal-personaltools dd.actionMenuContent" />
-
-        <!-- Portal messages -->
-
-        <!-- Columns -->
-        <replace css:content=".portletNavigationTree .navTreeLevel0 > li > a"
-                 css:theme=".sidenav li a"
-                 css:if-content=".portletNavigationTree .navTreeLevel0 > li > a" />
-        <drop css:theme=".sidenav"
-              css:if-not-content=".portletNavigationTree .navTreeLevel0 > li > a" />
-        <replace css:content-children="#content"
-                 css:theme-children="#content" />
-
-        <!-- Footer -->
-        <replace css:theme-children=".modal-footer .container .copyright"
-                 css:content-children="#portal-footer p" />
-        <replace css:theme-children=".modal-footer .container ul.footer-links"
-                 css:content-children="#portal-siteactions" />
-
-    </rules>
-
-</rules>
 
         <!-- Breadcrumbs -->
         <drop css:theme="ul.breadcrumb"
@@ -151,4 +95,61 @@
         <replace css:theme=".breadcrumb li.active"
                  css:content="#portal-breadcrumbs span#breadcrumbs-current"
                  css:if-content="#portal-breadcrumbs span#breadcrumbs-home a" />
+
+        <!-- File -->
+        <replace css:theme-children="#file ul.dropdown-menu"
+                 css:content-children="#content-views"
+                 css:if-content="#content-views" />
+        <drop css:theme="#file"
+              css:if-not-content="#content-views" />
+
+        <!-- Add -->
+        <replace css:theme-children="#add ul.dropdown-menu li"
+                 css:content-children="#plone-contentmenu-factories dd ul"
+                 css:if-content="#plone-contentmenu-factories" />
+        <drop css:theme="#add"
+              css:if-not-content="#plone-contentmenu-factories" />
+
+        <!-- Edit -->
+        <replace css:theme-children="#edit ul.dropdown-menu li"
+                 css:content-children="#plone-contentmenu-actions dd ul"
+                 css:if-content="#plone-contentmenu-actions" />
+        <drop css:theme="#edit"
+              css:if-not-content="#plone-contentmenu-actions" />
+
+        <!-- Display -->
+        <replace css:theme-children="#display ul.dropdown-menu li"
+                 css:content-children="#plone-contentmenu-display dd ul"
+                 css:if-content="#plone-contentmenu-display" />
+        <drop css:theme="#display"
+              css:if-not-content="#plone-contentmenu-display" />
+
+        <!-- State -->
+        <replace css:theme-children="#state ul.dropdown-menu li"
+                 css:content-children="#plone-contentmenu-workflow dd ul"
+                 css:if-content="#plone-contentmenu-workflow" />
+        <drop css:theme="#state"
+              css:if-not-content="#plone-contentmenu-workflow" />
+
+
+        <!-- Portal messages -->
+
+        <!-- Columns -->
+        <replace css:content=".portletNavigationTree .navTreeLevel0 > li > a"
+                 css:theme=".sidenav li a"
+                 css:if-content=".portletNavigationTree .navTreeLevel0 > li > a" />
+        <drop css:theme=".sidenav"
+              css:if-not-content=".portletNavigationTree .navTreeLevel0 > li > a" />
+        <replace css:content-children="#content"
+                 css:theme-children="#content" />
+
+        <!-- Footer -->
+        <replace css:theme-children=".modal-footer .container .copyright"
+                 css:content-children="#portal-footer p" />
+        <replace css:theme-children=".modal-footer .container ul.footer-links"
+                 css:content-children="#portal-siteactions" />
+
+    </rules>
+
+</rules>
 
