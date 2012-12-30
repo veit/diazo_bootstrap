@@ -105,3 +105,50 @@
 
 </rules>
 
+        <!-- Breadcrumbs -->
+        <drop css:theme="ul.breadcrumb"
+              css:if-not-content="#portal-breadcrumbs" />
+        <replace css:theme=".breadcrumb li.home a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-home a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-home a" />
+        <drop css:theme=".breadcrumb li.home"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-home" />
+        <replace css:theme=".breadcrumb li.breadcrumbs-1 a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-1 a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-1 a" />
+        <drop css:theme=".breadcrumb li.breadcrumbs-1"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-2" />
+        <replace css:theme=".breadcrumb li.breadcrumbs-2 a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-2 a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-2 a" />
+        <drop css:theme=".breadcrumb li.breadcrumbs-2"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-3" />
+        <replace css:theme=".breadcrumb li.breadcrumbs-3 a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-3 a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-3 a" />
+        <drop css:theme=".breadcrumb li.breadcrumbs-3"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-4" />
+        <replace css:theme=".breadcrumb li.breadcrumbs-4 a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-4 a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-4 a" />
+        <drop css:theme=".breadcrumb li.breadcrumbs-4"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-5" />
+        <replace css:theme=".breadcrumb li.breadcrumbs-5 a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-1 a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-5 a" />
+        <drop css:theme=".breadcrumb li.breadcrumbs-5"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-6" />
+        <replace css:theme=".breadcrumb li.breadcrumbs-6 a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-6 a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-6 a" />
+        <drop css:theme=".breadcrumb li.breadcrumbs-6"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-7" />
+        <replace css:theme=".breadcrumb li.breadcrumbs-7 a"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-7 a"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-7 a" />
+        <drop css:theme=".breadcrumb li.breadcrumbs-7"
+              css:if-not-content="#portal-breadcrumbs span#breadcrumbs-8" />
+        <replace css:theme=".breadcrumb li.active"
+                 css:content="#portal-breadcrumbs span#breadcrumbs-current"
+                 css:if-content="#portal-breadcrumbs span#breadcrumbs-home a" />
+
