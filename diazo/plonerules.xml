@@ -101,6 +101,13 @@
               css:if-not-content=".documentEditable" />
 
         <!-- File -->
+        <replace css:theme-children="#file > a"
+                 css:content-children="#edit-bar p::first-of-type"
+                 css:if-content="#edit-bar p" />
+        <after css:theme-children="#file > a"
+                method="raw">
+            <b class="caret"></b>
+        </after>
         <replace css:theme-children="#file ul.dropdown-menu"
                  css:content-children="#content-views"
                  css:if-content="#content-views" />
@@ -108,6 +115,13 @@
               css:if-not-content="#content-views" />
 
         <!-- Add -->
+        <replace css:theme-children="#add > a"
+                 css:content-children="#plone-contentmenu-factories dt.actionMenuHeader a span::first-of-type"
+                 css:if-content="#plone-contentmenu-factories dt.actionMenuHeader a span" />
+        <after css:theme-children="#add > a"
+                method="raw">
+            <b class="caret"></b>
+        </after>
         <replace css:theme-children="#add ul.dropdown-menu li"
                  css:content-children="#plone-contentmenu-factories dd ul"
                  css:if-content="#plone-contentmenu-factories" />
@@ -115,6 +129,13 @@
               css:if-not-content="#plone-contentmenu-factories" />
 
         <!-- Edit -->
+        <replace css:theme-children="#edit > a"
+                 css:content-children="#plone-contentmenu-actions dt.actionMenuHeader a span::first-of-type"
+                 css:if-content="#plone-contentmenu-actions dt.actionMenuHeader a span" />
+        <after css:theme-children="#edit > a"
+                method="raw">
+            <b class="caret"></b>
+        </after>
         <replace css:theme-children="#edit ul.dropdown-menu li"
                  css:content-children="#plone-contentmenu-actions dd ul"
                  css:if-content="#plone-contentmenu-actions" />
@@ -122,6 +143,13 @@
               css:if-not-content="#plone-contentmenu-actions" />
 
         <!-- Display -->
+        <replace css:theme-children="#display > a"
+                 css:content-children="#plone-contentmenu-display dt.actionMenuHeader a span::first-of-type"
+                 css:if-content="#plone-contentmenu-display dt.actionMenuHeader a span" />
+        <after css:theme-children="#display > a"
+                method="raw">
+            <b class="caret"></b>
+        </after>
         <replace css:theme-children="#display ul.dropdown-menu li"
                  css:content-children="#plone-contentmenu-display dd ul"
                  css:if-content="#plone-contentmenu-display" />
@@ -129,6 +157,13 @@
               css:if-not-content="#plone-contentmenu-display" />
 
         <!-- State -->
+        <replace css:theme-children="#state > a"
+                 css:content-children="#plone-contentmenu-workflow dt.actionMenuHeader a span::first-of-type"
+                 css:if-content="#plone-contentmenu-workflow dt.actionMenuHeader a span" />
+        <after css:theme-children="#state > a"
+                method="raw">
+            <b class="caret"></b>
+        </after>
         <replace css:theme-children="#state ul.dropdown-menu li"
                  css:content-children="#plone-contentmenu-workflow dd ul"
                  css:if-content="#plone-contentmenu-workflow" />
