@@ -95,6 +95,9 @@ Bootstrap-Updates
 
     $ PATH=../diazo/parts/nodejs/bin/:$PATH
     $ make bootstrap
+    cp -a js/tests/vendor/jquery.js bootstrap/js/
+    cp -a docs/assets/js/google-code-prettify/ bootstrap/js/
+
 
 Sphinx
 ======
