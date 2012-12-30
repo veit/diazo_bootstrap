@@ -114,8 +114,8 @@
         <replace css:theme-children="#edit ul.dropdown-menu li"
                  css:content-children="#plone-contentmenu-actions dd ul"
                  css:if-content="#plone-contentmenu-actions" />
-        <drop css:theme="#edit"
-              css:if-not-content="#plone-contentmenu-actions" />
+        <drop css:theme=".editable"
+              css:if-not-content=".documentEditable" />
 
         <!-- Display -->
         <replace css:theme-children="#display ul.dropdown-menu li"
