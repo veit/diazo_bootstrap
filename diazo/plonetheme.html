@@ -93,78 +93,114 @@
             <li class="active">Data</li>
           </ul>
 
-          <!-- Edit Navbar -->
-          <div class="editable navbar">
-            <div class="navbar-inner">
-              <div class="container">
-                <div>
-                  <ul class="nav">
-                    <li id="file" class="dropdown">
-                      <a href="#"
-                         class="dropdown-toggle"
-                         data-toggle="dropdown">
-                          File
-                          <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="#">View</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li id="add" class="dropdown">
-                      <a href="#"
-                         class="dropdown-toggle"
-                         data-toggle="dropdown">
-                            Add
-                          <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="#">Document</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li id="edit" class="dropdown">
-                      <a href="#"
-                         class="dropdown-toggle"
-                         data-toggle="dropdown">
-                            Edit
-                          <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="#">Copy</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li id="display" class="dropdown">
-                      <a href="#"
-                         class="dropdown-toggle"
-                         data-toggle="dropdown">
-                            Display
-                          <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="#">Summary</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li id="state" class="dropdown">
-                      <a href="#"
-                         class="dropdown-toggle"
-                         data-toggle="dropdown">
-                            State
-                          <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="#">published</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+          <div class="editable">
+            <!-- Edit Navbar -->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+                  <div>
+                    <ul class="nav">
+                      <li id="file" class="dropdown">
+                        <a href="#"
+                           class="dropdown-toggle"
+                           data-toggle="dropdown">
+                            File
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">View</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="add" class="dropdown">
+                        <a href="#"
+                           class="dropdown-toggle"
+                           data-toggle="dropdown">
+                              Add
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">Document</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="edit" class="dropdown">
+                        <a href="#"
+                           class="dropdown-toggle"
+                           data-toggle="dropdown">
+                              Edit
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">Copy</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="display" class="dropdown">
+                        <a href="#"
+                           class="dropdown-toggle"
+                           data-toggle="dropdown">
+                              Display
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">Summary</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="state" class="dropdown">
+                        <a href="#"
+                           class="dropdown-toggle"
+                           data-toggle="dropdown">
+                              State
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">published</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Messages -->
+            <div class="alert alert-block">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <h4>Warning!</h4>
+              <p>Best check yo self, you're not...</p>
+            </div>
+
+            <div class="tabbable">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#default" data-toggle="tab">Default</a></li>
+                <li><a href="#categorization" data-toggle="tab">Categorization</a></li>
+                <li><a href="#dates" data-toggle="tab">Dates</a></li>
+                <li><a href="#creators" data-toggle="tab">Creators</a></li>
+                <li><a href="#settings" data-toggle="tab">Settings</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="default">
+                  <p>Default</p>
+                </div>
+                <div class="tab-pane" id="categorization">
+                  <p>Categorization</p>
+                </div>
+                <div class="tab-pane" id="dates">
+                  <p>Dates</p>
+                </div>
+                <div class="tab-pane" id="creators">
+                  <p>Creators</p>
+                </div>
+                <div class="tab-pane" id="settings">
+                  <p>Settings</p>
                 </div>
               </div>
             </div>
@@ -172,7 +208,7 @@
 
           <!-- Content  -->
           <div id="content">
-            <h1>Main content</h1>
+            <h1>Title</h1>
             <p>
               Main content placeholder
             </p>
