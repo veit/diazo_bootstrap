@@ -183,6 +183,12 @@
         <drop css:theme="h1"
               css:if-not-content="h1" />
 
+        <!-- Document Byline-->
+        <replace css:content-children=".documentByLine"
+                 css:theme-children=".documentByLine" />
+        <drop css:theme=".documentByLine"
+              css:if-not-content=".documentByLine" />
+
         <!-- Alerts -->
         <replace css:content-children="#content dl.info dt"
                  css:theme-children=".alert-block h4"
