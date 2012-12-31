@@ -49,6 +49,13 @@
                  css:content-children="#portal-personaltools dd.actionMenuContent ul"
                  css:if-content="#portal-personaltools dd.actionMenuContent" />
 
+        <!-- Sidenav -->
+        <replace css:content=".portletNavigationTree .navTreeLevel0 > li"
+                 css:theme=".sidenav li"
+                 css:if-content=".portletNavigationTree .navTreeLevel0 > li" />
+        <drop css:theme=".sidenav"
+              css:if-not-content=".portletNavigationTree .navTreeLevel0 > li" />
+
         <!-- Breadcrumbs -->
         <drop css:theme="ul.breadcrumb"
               css:if-not-content="#portal-breadcrumbs" />
@@ -95,6 +102,8 @@
         <replace css:theme=".breadcrumb li.active"
                  css:content="#portal-breadcrumbs span#breadcrumbs-current"
                  css:if-content="#portal-breadcrumbs span#breadcrumbs-home a" />
+
+        <!-- Portal messages -->
 
         <!-- Edit bar -->
         <drop css:theme=".editable"
@@ -169,16 +178,6 @@
                  css:if-content="#plone-contentmenu-workflow" />
         <drop css:theme="#state"
               css:if-not-content="#plone-contentmenu-workflow" />
-
-
-        <!-- Portal messages -->
-
-        <!-- Columns -->
-        <replace css:content=".portletNavigationTree .navTreeLevel0 > li"
-                 css:theme=".sidenav li"
-                 css:if-content=".portletNavigationTree .navTreeLevel0 > li" />
-        <drop css:theme=".sidenav"
-              css:if-not-content=".portletNavigationTree .navTreeLevel0 > li" />
 
         <!-- Content -->
         <replace css:content-children="#content"
