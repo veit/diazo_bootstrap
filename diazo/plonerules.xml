@@ -189,6 +189,12 @@
         <drop css:theme=".documentByLine"
               css:if-not-content=".documentByLine" />
 
+        <!-- Link to presentation -->
+        <replace css:content-children="#link-presentation"
+                 css:theme-children="#link-presentation" />
+        <drop css:theme="#link-presentation"
+              css:if-not-content="#link-presentation" />
+
         <!-- Alerts -->
         <replace css:content-children="#content dl.info dt"
                  css:theme-children=".alert-block h4"
