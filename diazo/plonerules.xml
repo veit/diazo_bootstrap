@@ -174,11 +174,13 @@
         <!-- Portal messages -->
 
         <!-- Columns -->
-        <replace css:content=".portletNavigationTree .navTreeLevel0 > li > a"
-                 css:theme=".sidenav li a"
-                 css:if-content=".portletNavigationTree .navTreeLevel0 > li > a" />
+        <replace css:content=".portletNavigationTree .navTreeLevel0 > li"
+                 css:theme=".sidenav li"
+                 css:if-content=".portletNavigationTree .navTreeLevel0 > li" />
         <drop css:theme=".sidenav"
-              css:if-not-content=".portletNavigationTree .navTreeLevel0 > li > a" />
+              css:if-not-content=".portletNavigationTree .navTreeLevel0 > li" />
+
+        <!-- Content -->
         <replace css:content-children="#content"
                  css:theme-children="#content" />
 
