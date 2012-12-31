@@ -102,7 +102,7 @@
 
         <!-- File -->
         <replace css:theme-children="#file > a"
-                 css:content-children="#edit-bar p::first-of-type"
+                 css:content-children="#edit-bar p:first-of-type"
                  css:if-content="#edit-bar p" />
         <after css:theme-children="#file > a"
                 method="raw">
@@ -116,7 +116,7 @@
 
         <!-- Add -->
         <replace css:theme-children="#add > a"
-                 css:content-children="#plone-contentmenu-factories dt.actionMenuHeader a span::first-of-type"
+                 css:content-children="#plone-contentmenu-factories dt.actionMenuHeader a span:first-of-type"
                  css:if-content="#plone-contentmenu-factories dt.actionMenuHeader a span" />
         <after css:theme-children="#add > a"
                 method="raw">
@@ -130,7 +130,7 @@
 
         <!-- Edit -->
         <replace css:theme-children="#edit > a"
-                 css:content-children="#plone-contentmenu-actions dt.actionMenuHeader a span::first-of-type"
+                 css:content-children="#plone-contentmenu-actions dt.actionMenuHeader a span:first-of-type"
                  css:if-content="#plone-contentmenu-actions dt.actionMenuHeader a span" />
         <after css:theme-children="#edit > a"
                 method="raw">
@@ -144,7 +144,7 @@
 
         <!-- Display -->
         <replace css:theme-children="#display > a"
-                 css:content-children="#plone-contentmenu-display dt.actionMenuHeader a span::first-of-type"
+                 css:content-children="#plone-contentmenu-display dt.actionMenuHeader a span:first-of-type"
                  css:if-content="#plone-contentmenu-display dt.actionMenuHeader a span" />
         <after css:theme-children="#display > a"
                 method="raw">
@@ -158,10 +158,10 @@
 
         <!-- State -->
         <replace css:theme-children="#state > a"
-                 css:content-children="#plone-contentmenu-workflow dt.actionMenuHeader a span::first-of-type"
+                 css:content-children="#plone-contentmenu-workflow dt.actionMenuHeader a span:first-of-type"
                  css:if-content="#plone-contentmenu-workflow dt.actionMenuHeader a span" />
         <after css:theme-children="#state > a"
-                method="raw">
+               method="raw">
             <b class="caret"></b>
         </after>
         <replace css:theme-children="#state ul.dropdown-menu li"
