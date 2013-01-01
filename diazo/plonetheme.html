@@ -171,49 +171,52 @@
               </div>
             </div>
 
-            <!-- Messages -->
+            <!-- Title -->
+            <h1>Title</h1>
+
+            <!-- Content Message -->
             <div class="alert alert-block">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
               <h4>Warning!</h4>
               <p>Best check yo self, you're not...</p>
             </div>
 
-            <div class="tabbable">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#default" data-toggle="tab">Default</a></li>
-                <li><a href="#categorization" data-toggle="tab">Categorization</a></li>
-                <li><a href="#dates" data-toggle="tab">Dates</a></li>
-                <li><a href="#creators" data-toggle="tab">Creators</a></li>
-                <li><a href="#settings" data-toggle="tab">Settings</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="default">
-                  <p>Default</p>
-                </div>
-                <div class="tab-pane" id="categorization">
-                  <p>Categorization</p>
-                </div>
-                <div class="tab-pane" id="dates">
-                  <p>Dates</p>
-                </div>
-                <div class="tab-pane" id="creators">
-                  <p>Creators</p>
-                </div>
-                <div class="tab-pane" id="settings">
-                  <p>Settings</p>
-                </div>
-              </div>
-            </div>
-          </div>
+            <form name="edit_form" method="post" enctype="multipart/form-data" class="edit_form">
+                <div class="tabbable">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="default" href="#default" data-toggle="tab">Default</a></li>
+                    <li><a class="categorization" href="#categorization" data-toggle="tab">Categorization</a></li>
+                    <li><a class="dates" href="#dates" data-toggle="tab">Dates</a></li>
+                    <li><a class="creators" href="#creators" data-toggle="tab">Creators</a></li>
+                    <li><a class="settings" href="#settings" data-toggle="tab">Settings</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="default">
+                      <p>Default</p>
+                    </div>
+                    <div class="tab-pane" id="categorization">
+                      <p>Categorization</p>
+                    </div>
+                    <div class="tab-pane" id="dates">
+                      <p>Dates</p>
+                    </div>
+                    <div class="tab-pane" id="creators">
+                      <p>Creators</p>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                      <p>Settings</p>
+                    </div>
+                  </div> <!-- /tab-content -->
+                </div> <!-- /tabbable -->
+                <div class="formControls"></div>
+            </form>
+          </div> <!-- /editable  -->
 
           <!-- Content  -->
           <div id="content">
-            <h1>Title</h1>
             <div class="documentByLine" />
             <p id="link-presentation" />
-            <p>
-              Main content placeholder
-            </p>
+            <div id="content-core" />
           </div>
 
         </div> <!-- /span6  -->

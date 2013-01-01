@@ -205,6 +205,51 @@
         <drop css:theme=".alert-block"
               css:if-not-content="#content dl.info" />
 
+        <!-- Edit form -->
+        <!-- Tabs -->
+        <replace css:content-children="form #fieldsetlegend-default"
+                 css:theme-children=".edit_form ul.nav-tabs a.default"
+                 css:if-content="" />
+        <replace css:content-children="form #fieldsetlegend-categorization"
+                 css:theme-children=".edit_form ul.nav-tabs a.categorization"
+                 css:if-content="" />
+        <replace css:content-children="form #fieldsetlegend-dates"
+                 css:theme-children=".edit_form ul.nav-tabs a.dates"
+                 css:if-content="" />
+        <replace css:content-children="form #fieldsetlegend-creators"
+                 css:theme-children=".edit_form ul.nav-tabs a.creators"
+                 css:if-content="" />
+        <replace css:content-children="form #fieldsetlegend-settings"
+                 css:theme-children=".edit_form ul.nav-tabs a.setings"
+                 css:if-content="" />
+        <!-- Tab content -->
+        <replace css:content-children="form #fieldset-default"
+                 css:theme-children=".edit_form div.tab-content #default"
+                 css:if-content="" />
+        <drop css:content="form #fieldset-default legend" />
+        <replace css:content-children="form #fieldset-categorization"
+                 css:theme-children=".edit_form div.tab-content #categorization"
+                 css:if-content="" />
+        <drop css:content="form #fieldset-categorization legend" />
+        <replace css:content-children="form #fieldset-dates"
+                 css:theme-children=".edit_form div.tab-content #dates"
+                 css:if-content="" />
+        <drop css:content="form #fieldset-dates legend" />
+        <replace css:content-children="form #fieldset-creators"
+                 css:theme-children=".edit_form div.tab-content #creators"
+                 css:if-content="" />
+        <drop css:content="form #fieldset-creators legend" />
+        <replace css:content-children="form #fieldset-settings"
+                 css:theme-children=".edit_form div.tab-content #settings"
+                 css:if-content="" />
+        <drop css:content="form #fieldset-settings legend" />
+        <replace css:content-children="form div.formControls"
+                 css:theme-children=".edit_form div.formControls"
+                 css:if-content="" />
+
+        <drop css:theme=".edit_form"
+              css:if-not-content="form#document-base-edit" />
+
         <!-- Link to presentation -->
         <replace css:content-children="#content-core"
                  css:theme-children="#content-core" />
