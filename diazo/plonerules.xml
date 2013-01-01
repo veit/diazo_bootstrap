@@ -205,6 +205,12 @@
         <drop css:theme=".alert-block"
               css:if-not-content="#content dl.info" />
 
+        <!-- Link to presentation -->
+        <replace css:content-children="#content-core"
+                 css:theme-children="#content-core" />
+        <drop css:theme="#content-core"
+              css:if-not-content="#content-core" />
+
         <!-- Footer -->
         <replace css:theme-children=".modal-footer .container .copyright"
                  css:content-children="#portal-footer p" />
