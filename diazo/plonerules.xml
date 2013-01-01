@@ -262,6 +262,27 @@
         <replace css:theme-children=".modal-footer .container ul.footer-links"
                  css:content-children="#portal-siteactions" />
 
+        <!-- Contact form -->
+        <replace css:theme-children="#content"
+                 css:content-children="body.template-contact-info #content"
+                 css:if-content="" />
+
+        <!-- Login form -->
+        <replace css:theme-children="#content"
+                 css:content-children="body.template-login_form #content"
+                 css:if-content="" />
+
+        <!-- Dashboard -->
+        <replace css:theme-children="#content"
+                 css:content-children="body.template-dashboard #content"
+                 css:if-content="" />
+
+        <!-- Control panel -->
+        <replace css:theme-children="#content"
+                 css:content-children="body.template-overview-controlpanel #content"
+                 css:if-content="" />
+
+
     </rules>
 
 </rules>
