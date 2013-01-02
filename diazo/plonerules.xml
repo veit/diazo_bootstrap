@@ -256,6 +256,12 @@
         <drop css:theme="#content-core"
               css:if-not-content="#content-core" />
 
+        <!-- Related items -->
+        <replace css:content="dl#relatedItemBox"
+                 css:theme="dl#relatedItemBox" />
+        <drop css:theme="dl#relatedItemBox"
+              css:if-not-content="dl#relatedItemBox" />
+
         <!-- Next-/previous navigation -->
         <replace css:content="div.listingBar a.previous"
                  css:theme="ul.pager a.previous" />
