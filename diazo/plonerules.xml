@@ -250,7 +250,7 @@
         <drop css:theme=".edit_form"
               css:if-not-content="form#document-base-edit" />
 
-        <!-- Link to presentation -->
+        <!-- Content body -->
         <replace css:content-children="#content-core"
                  css:theme-children="#content-core" />
         <drop css:theme="#content-core"
