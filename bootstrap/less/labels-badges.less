@@ -5,7 +5,9 @@
 
 // Base classes
 .label,
-.badge {
+.badge,
+#category span,
+#category span a {
   display: inline-block;
   padding: 2px 4px;
   font-size: @baseFontSize * .846;
@@ -21,7 +23,9 @@
 .label {
   .border-radius(3px);
 }
-.badge {
+.badge,
+#category span {
+  margin-right: 9px;
   padding-left: 9px;
   padding-right: 9px;
   .border-radius(9px);
@@ -29,7 +33,8 @@
 
 // Empty labels/badges collapse
 .label,
-.badge {
+.badge,
+#category span {
   &:empty {
     display: none;
   }
@@ -38,7 +43,9 @@
 // Hover state, but only for links
 a {
   &.label:hover,
-  &.badge:hover {
+  &.badge:hover,
+  &#category span:hover,
+  &#category span a:hover {
     color: @white;
     text-decoration: none;
     cursor: pointer;
@@ -48,7 +55,8 @@ a {
 // Colors
 // Only give background-color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
 .label,
-.badge {
+.badge,
+#category span {
   // Important (red)
   &-important         { background-color: @errorText; }
   &-important[href]   { background-color: darken(@errorText, 10%); }
@@ -69,14 +77,16 @@ a {
 // Quick fix for labels/badges in buttons
 .btn {
   .label,
-  .badge {
+  .badge,
+  #category span {
     position: relative;
     top: -1px;
   }
 }
 .btn-mini {
   .label,
-  .badge {
+  .badge,
+  #category span {
     top: 0;
   }
 }

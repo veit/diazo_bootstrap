@@ -262,6 +262,11 @@
         <drop css:theme="dl#relatedItemBox"
               css:if-not-content="dl#relatedItemBox" />
 
+        <!-- Tags -->
+        <replace css:content="#category span"
+                 css:theme="#category span.badge" />
+        <drop css:content="div#category span.separator" />
+
         <!-- Next-/previous navigation -->
         <replace css:content="div.listingBar a.previous"
                  css:theme="ul.pager a.previous" />
