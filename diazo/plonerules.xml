@@ -256,6 +256,16 @@
         <drop css:theme="#content-core"
               css:if-not-content="#content-core" />
 
+        <!-- Next-/previous navigation -->
+        <replace css:content="div.listingBar a.previous"
+                 css:theme="ul.pager a.previous" />
+        <drop css:theme="div.listingBar a.previous"
+              css:if-not-content="ul.pager a.previous" />
+        <replace css:content="div.listingBar a.next"
+                 css:theme="ul.pager a.next" />
+        <drop css:theme="div.listingBar a.next"
+              css:if-not-content="ul.pager a.next" />
+
         <!-- Footer -->
         <replace css:theme-children=".modal-footer .container .copyright"
                  css:content-children="#portal-footer p" />
