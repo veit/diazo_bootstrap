@@ -20,6 +20,7 @@
         <copy attributes="href"
               css:theme=".brand"
               css:content="#portal-logo" />
+        <drop css:content="#portaltab-index_html" />
 
         <!-- Global navigation -->
         <replace css:theme-children="#globalnav .nav"
