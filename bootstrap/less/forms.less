@@ -351,7 +351,7 @@ input[type="checkbox"][readonly] {
 #content-core li.formTab a.required span::after,
 div.field span.required::after {
   content: "*";
-  color: Red;
+  color: @errorText;
   padding-left: 0.2em;
 }
 
@@ -363,7 +363,11 @@ div.field span.required::after {
   .formFieldState(@warningText, @warningText, @warningBackground);
 }
 // Error
-.control-group.error {
+.fieldErrorBox {
+  color: @errorText;
+}
+.control-group.error,
+.field.error {
   .formFieldState(@errorText, @errorText, @errorBackground);
 }
 // Success
