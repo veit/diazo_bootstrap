@@ -235,6 +235,13 @@
                      css:theme-children=".edit_form div.tab-content #categorization" />
             <drop css:content="form #fieldset-categorization legend" />
         </rules>
+        <rules css:if-content="form #fieldsetlegend-dates">
+            <replace css:content-children="form #fieldsetlegend-dates"
+                     css:theme-children=".edit_form ul.nav-tabs a.dates" />
+            <replace css:content-children="form #fieldset-dates"
+                     css:theme-children=".edit_form div.tab-content #dates" />
+            <drop css:content="form #fieldset-dates legend" />
+        </rules>
         <rules css:if-content="form #fieldsetlegend-creators">
             <replace css:content-children="form #fieldsetlegend-creators"
                      css:theme-children=".edit_form ul.nav-tabs a.creators" />
