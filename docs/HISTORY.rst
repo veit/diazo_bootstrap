@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.7.1 (2013-02-03)
+------------------
+
+- Updated styles for plone edit-forms.
+- Fixed ignored field errors
+  `[#2] <https://github.com/veit/diazo_bootstrap/issues/2>`_
+
 0.7.0 (2013-01-01)
 ------------------
 
