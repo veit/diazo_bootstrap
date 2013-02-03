@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.8.0 (2013-02-03)
+------------------
+
+- Integrated Font Awesome
+  `[#11] <https://github.com/veit/diazo_bootstrap/issues/11>`_
+- Fixed prettify links
+- Updated Makefile for bootstrap
+
 0.7.1 (2013-02-03)
 ------------------
 
