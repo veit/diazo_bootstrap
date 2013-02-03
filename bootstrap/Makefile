@@ -67,6 +67,10 @@ bootstrap:
 	mkdir -p bootstrap/css
 	mkdir -p bootstrap/js
 	cp img/* bootstrap/img/
+	cp -a js/tests/vendor/jquery.js bootstrap/js/
+	cp -a docs/assets/js/google-code-prettify/ bootstrap/js/
+	cp -a font/ bootstrap/
+	PATH=../diazo/parts/nodejs/bin/:$PATH
 	recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.css
 	recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.min.css
 	recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.css
