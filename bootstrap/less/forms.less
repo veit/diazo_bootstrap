@@ -161,7 +161,7 @@ input[type="file"] {
 
 // Make select elements obey height by applying a border
 select {
-  width: 220px; // default input width + 10px of padding that doesn't get applied
+  width: auto;
   border: 1px solid @inputBorder;
   background-color: @inputBackground; // Chrome on Linux and Mobile Safari need background-color
 }
@@ -615,6 +615,9 @@ input.search-query {
 .form-search .btn-group,
 .form-inline .btn-group {
   display: inline-block;
+}
+label.hiddenStructure {
+  display: none;
 }
 // Remove margin for input-prepend/-append
 .form-search .input-append,
