@@ -11,6 +11,11 @@
         <!-- Head elements -->
         <replace css:theme="html head title"
                  css:content="html head title" />
+        <after css:theme-children="html head" >
+            <link rel="stylesheet" type="text/css" media="screen" href="/++resource++tinymce.stylesheets/tinymce.css" />
+            <script type="text/javascript" src="/tiny_mce.js"></script>
+            <script type="text/javascript" src="/tiny_mce_init.js"></script>
+        </after>
         <after css:theme-children="html head"
                css:content="html head meta" />
         <after css:theme-children="html head"
@@ -318,7 +323,6 @@
         <replace css:theme-children="#content"
                  css:content-children="body.template-overview-controlpanel #content"
                  css:if-content="" />
-
 
     </rules>
 
