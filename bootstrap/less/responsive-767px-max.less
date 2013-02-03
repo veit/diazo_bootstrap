@@ -25,14 +25,17 @@
   // TYPOGRAPHY
   // ----------
   // Reset horizontal dl
-  .dl-horizontal {
-    dt {
+  .dl-horizontal,
+  .eventDetails {
+    dt,
+    .eventDetail h3 {
       float: none;
       clear: none;
       width: auto;
       text-align: left;
     }
-    dd {
+    dd,
+    .eventDetail div {
       margin-left: 0;
     }
   }

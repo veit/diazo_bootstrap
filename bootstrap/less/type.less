@@ -127,30 +127,41 @@ ol.inline {
 }
 
 // Description Lists
-dl {
+dl,
+.eventDetails {
   margin-bottom: @baseLineHeight;
 }
 dt,
 dd {
   line-height: @baseLineHeight;
 }
-dt {
+dt,
+.eventDetail h3 {
   font-weight: bold;
 }
-dd {
+dd,
+.eventDetail div {
   margin-left: @baseLineHeight / 2;
 }
+.eventDetail h3 {
+  margin: 0;
+  line-height: 20px;
+  font-size: 14px;
+}
 // Horizontal layout (like forms)
-.dl-horizontal {
+.dl-horizontal,
+.eventDetails {
   .clearfix(); // Ensure dl clears floats if empty dd elements present
-  dt {
+  dt,
+  .eventDetail h3 {
     float: left;
     width: @horizontalComponentOffset - 20;
     clear: left;
     text-align: right;
     .text-overflow();
   }
-  dd {
+  dd,
+  .eventDetail div {
     margin-left: @horizontalComponentOffset;
   }
 }
