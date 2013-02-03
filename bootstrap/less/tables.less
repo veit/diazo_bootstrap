@@ -16,12 +16,15 @@ table {
 // BASELINE STYLES
 // ---------------
 
-.table {
+.table,
+.eventDetails {
   width: 100%;
   margin-bottom: @baseLineHeight;
   // Cells
   th,
-  td {
+  td,
+  h2,
+  .eventDetail {
     padding: 8px;
     line-height: @baseLineHeight;
     text-align: left;
@@ -32,7 +35,8 @@ table {
     font-weight: bold;
   }
   // Bottom align for column headings
-  thead th {
+  thead th,
+  h2 {
     vertical-align: bottom;
   }
   // Remove top border from thead by default
@@ -41,7 +45,8 @@ table {
   colgroup + thead tr:first-child th,
   colgroup + thead tr:first-child td,
   thead:first-child tr:first-child th,
-  thead:first-child tr:first-child td {
+  thead:first-child tr:first-child td,
+  h2 {
     border-top: 0;
   }
   // Account for multiple tbody instances
@@ -71,14 +76,17 @@ table {
 // BORDERED VERSION
 // ----------------
 
-.table-bordered {
+.table-bordered,
+.eventDetails {
   border: 1px solid @tableBorder;
   border-collapse: separate; // Done so we can round those corners!
   *border-collapse: collapse; // IE7 can't round corners anyway
   border-left: 0;
   .border-radius(@baseBorderRadius);
   th,
-  td {
+  td,
+  h2,
+  .eventDetail {
     border-left: 1px solid @tableBorder;
   }
   // Prevent a double border
@@ -95,22 +103,26 @@ table {
   }
   // For first th or td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:first-child,
-  tbody:first-child tr:first-child > td:first-child {
+  tbody:first-child tr:first-child > td:first-child,
+  h2 {
     .border-top-left-radius(@baseBorderRadius);
   }
   thead:first-child tr:first-child > th:last-child,
-  tbody:first-child tr:first-child > td:last-child {
+  tbody:first-child tr:first-child > td:last-child,
+  h2 {
     .border-top-right-radius(@baseBorderRadius);
   }
   // For first th or td in the last row in the last thead or tbody
   thead:last-child tr:last-child > th:first-child,
   tbody:last-child tr:last-child > td:first-child,
-  tfoot:last-child tr:last-child > td:first-child {
+  tfoot:last-child tr:last-child > td:first-child,
+  .eventDetails:last-child {
     .border-bottom-left-radius(@baseBorderRadius);
   }
   thead:last-child tr:last-child > th:last-child,
   tbody:last-child tr:last-child > td:last-child,
-  tfoot:last-child tr:last-child > td:last-child {
+  tfoot:last-child tr:last-child > td:last-child, 
+  .eventDetails:last-child {
     .border-bottom-right-radius(@baseBorderRadius);
   }
 
