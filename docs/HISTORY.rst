@@ -1,6 +1,17 @@
 Changelog
 =========
 
+0.9.0 (2013-02-04)
+------------------
+
+- Added TinyMCE to Plone Theme
+  `[#13] <https://github.com/veit/diazo_bootstrap/issues/13>`_
+- Added style for Plone Events
+  `[#9] <https://github.com/veit/diazo_bootstrap/issues/9>`_
+- Added style for Plone News
+  `[#10] <https://github.com/veit/diazo_bootstrap/issues/10>`_
+- Switched to Google Web Font Droid
+
 0.8.0 (2013-02-03)
 ------------------
 
