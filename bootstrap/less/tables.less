@@ -17,6 +17,7 @@ table {
 // ---------------
 
 .table,
+#content table,
 .eventDetails {
   width: 100%;
   margin-bottom: @baseLineHeight;
@@ -158,7 +159,8 @@ table {
 // --------------
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-.table-striped {
+.table-striped,
+.listing {
   tbody {
     > tr:nth-child(odd) > td,
     > tr:nth-child(odd) > th {
