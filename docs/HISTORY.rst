@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.9.1 (2013-02-04)
+------------------
+
+- Style views for images in folder views
+  `[#14] <https://github.com/veit/diazo_bootstrap/issues/14>`_
+
 0.9.0 (2013-02-04)
 ------------------
 
