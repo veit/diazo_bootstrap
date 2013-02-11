@@ -323,6 +323,9 @@
                  css:content-children="body.template-contact-info #content"
                  css:if-content="" />
 
+        <!-- Search -->
+        <drop css:content="#search-results-bar .actionMenu" />
+
         <!-- Login form -->
         <replace css:theme-children="#content"
                  css:content-children="body.template-login_form #content"
