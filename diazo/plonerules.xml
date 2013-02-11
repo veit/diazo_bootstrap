@@ -72,9 +72,17 @@
         <!-- Sidenav -->
         <replace css:content=".portletNavigationTree .navTreeLevel0 > li"
                  css:theme=".sidenav li"
-                 css:if-content=".portletNavigationTree .navTreeLevel0 > li" />
-        <drop css:theme=".sidenav"
+                 css:if-content="" />
+        <drop css:theme-children="#left-column"
               css:if-not-content=".portletNavigationTree .navTreeLevel0 > li" />
+        <!-- Left portlet manager -->
+        <replace css:content-children="#portletmanager-plone-leftcolumn"
+                 css:theme-children="#portletmanager-plone-leftcolumn"
+                 css:if-content="" />
+        <drop css:theme="#portletmanager-plone-leftcolumn"
+              css:if-not-content="#portletmanager-plone-leftcolumn" />
+        <drop css:theme="#left-column"
+              css:if-content="#portletmanager-plone-leftcolumn" />
 
         <!-- Breadcrumbs -->
         <drop css:theme="ul.breadcrumb"
@@ -135,11 +143,17 @@
                 method="raw">
             <b class="caret"></b>
         </after>
-        <replace css:theme-children="#file ul.dropdown-menu"
+        <replace css:theme="#file ul.dropdown-menu li.view-actions"
                  css:content-children="#content-views"
-                 css:if-content="#content-views" />
+                 css:if-content="" />
         <drop css:theme="#file"
               css:if-not-content="#content-views" />
+        <replace css:theme-children="#file ul.dropdown-menu li.manage-portlets"
+                 css:content-children=".managePortletsLink"
+                 css:if-content="" />
+        <replace css:theme-children="#file ul.dropdown-menu li.manage-portlets"
+                 css:content=".managePortletsFallback"
+                 css:if-content="" />
 
         <!-- Add -->
         <replace css:theme-children="#add > a"
