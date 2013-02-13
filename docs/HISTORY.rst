@@ -1,6 +1,18 @@
 Changelog
 =========
 
+0.9.2 (2013-02-13)
+------------------
+
+- Added vs.bootstrap.tinymce
+- Switched to buildout 2.0
+- Added image styles
+- Added style for category link
+- Dropped search filter
+- Fixed Missing link to portlet managers
+  `[#15] <https://github.com/veit/diazo_bootstrap/issues/14>`_ 
+- Added plone templates for templer
+
 0.9.1 (2013-02-04)
 ------------------
 
