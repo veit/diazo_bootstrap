@@ -1,6 +1,23 @@
 Changelog
 =========
 
+0.9.3 (2013-02-24)
+------------------
+
+- Updated to bootstrap 2.3
+  [Veit Schiele]
+- `#17: Content Rules for glossary entries
+  <https://github.com/veit/diazo_bootstrap/issues/17>`_
+  [Veit Schiele]
+- `#18: Add document actions
+  <https://github.com/veit/diazo_bootstrap/issues/18>`_
+  [Veit Schiele]
+- `#16: Add hero unit
+  <https://github.com/veit/diazo_bootstrap/issues/16>`_
+  [Veit Schiele]
+- Switched to 9 span main column
+  [Veit Schiele]
+
 0.9.2 (2013-02-13)
 ------------------
 
