@@ -4,8 +4,8 @@ Changelog
 0.9.3 (2013-02-24)
 ------------------
 
-- Updated to bootstrap 2.3
-  [Veit Schiele]
+- `#19: Update to Bootstrap 2.3
+  <https://github.com/veit/diazo_bootstrap/issues/19>`_
 - `#17: Content Rules for glossary entries
   <https://github.com/veit/diazo_bootstrap/issues/17>`_
   [Veit Schiele]
