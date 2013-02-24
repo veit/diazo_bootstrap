@@ -8,8 +8,8 @@
 
 body {
   position: relative;
-  margin: 0;
   padding-top: 40px;
+  margin: 0;
   font-family: @baseFontFamily;
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
@@ -25,7 +25,8 @@ a {
   color: @linkColor;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+a:focus {
   color: @linkColorHover;
   text-decoration: underline;
 }
@@ -40,10 +41,10 @@ a:hover {
 }
 
 // Add polaroid-esque trim
-.img-polaroid,
 .newsImageContainer,
 #content div.tileItem > a,
-#content div.photoAlbumEntry > a {
+#content div.photoAlbumEntry > a,
+.img-polaroid {
   padding: 4px;
   background-color: #fff;
   border: 1px solid #ccc;

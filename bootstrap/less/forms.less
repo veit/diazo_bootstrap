@@ -94,7 +94,10 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 95%;
+  width: 686px; // plus 12px padding and 2px border
+}
+#global-nav-search input {
+  width: 206px;
 }
 // Reset height since textareas have rows
 textarea {
@@ -161,7 +164,7 @@ input[type="file"] {
 
 // Make select elements obey height by applying a border
 select {
-  width: auto;
+  width: 700px; // default input width + 10px of padding that doesn't get applied
   border: 1px solid @inputBorder;
   background-color: @inputBackground; // Chrome on Linux and Mobile Safari need background-color
 }
@@ -343,6 +346,7 @@ input[type="checkbox"][readonly] {
 
 
 
+
 // FORM FIELD REQUIRED 
 // -------------------
 
@@ -355,6 +359,9 @@ div.field span.required::after {
   padding-left: 0.2em;
 }
 
+
+
+
 // FORM FIELD FEEDBACK STATES
 // --------------------------
 
@@ -366,8 +373,8 @@ div.field span.required::after {
 .fieldErrorBox {
   color: @errorText;
 }
-.control-group.error,
-.field.error {
+.field.error,
+.control-group.error {
   .formFieldState(@errorText, @errorText, @errorBackground);
 }
 // Success
@@ -412,19 +419,20 @@ select:focus:invalid {
 // HELP TEXT
 // ---------
 
-.help-block,
 .formHelp,
+.help-block,
 .help-inline {
   color: lighten(@textColor, 15%); // lighten the text some for contrast
 }
 
-.help-block,
-.formHelp {
+.formHelp,
+.help-block {
   display: block; // account for any element using help-block
   margin-bottom: @baseLineHeight / 2;
 }
 
-.help-inline {
+ .formHelp,
+ .help-inline {
   display: inline-block;
   .ie7-inline-block();
   vertical-align: middle;
@@ -439,7 +447,9 @@ select:focus:invalid {
 // Allow us to put symbols and text within the input field for a cleaner look
 .input-append,
 .input-prepend {
-  margin-bottom: 5px;
+  display: inline-block;
+  margin-bottom: @baseLineHeight / 2;
+  vertical-align: middle;
   font-size: 0; // white space collapse hack
   white-space: nowrap; // Prevent span and input from separating
 
@@ -447,7 +457,8 @@ select:focus:invalid {
   input,
   select,
   .uneditable-input,
-  .dropdown-menu {
+  .dropdown-menu,
+  .popover {
     font-size: @baseFontSize;
   }
 
@@ -606,6 +617,7 @@ input.search-query {
     vertical-align: middle;
   }
   // Re-hide hidden elements due to specifity
+  label.hiddenStructure,
   .hide {
     display: none;
   }
@@ -615,9 +627,6 @@ input.search-query {
 .form-search .btn-group,
 .form-inline .btn-group {
   display: inline-block;
-}
-label.hiddenStructure {
-  display: none;
 }
 // Remove margin for input-prepend/-append
 .form-search .input-append,

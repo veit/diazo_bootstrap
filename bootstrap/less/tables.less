@@ -6,6 +6,8 @@
 // BASE TABLES
 // -----------------
 
+#content table,
+.eventDetails,
 table {
   max-width: 100%;
   background-color: @tableBackground;
@@ -16,16 +18,16 @@ table {
 // BASELINE STYLES
 // ---------------
 
-.table,
 #content table,
-.eventDetails {
+.eventDetails,
+.table {
   width: 100%;
   margin-bottom: @baseLineHeight;
   // Cells
-  th,
-  td,
   h2,
-  .eventDetail {
+  .eventDetail,
+  th,
+  td {
     padding: 8px;
     line-height: @baseLineHeight;
     text-align: left;
@@ -36,18 +38,18 @@ table {
     font-weight: bold;
   }
   // Bottom align for column headings
-  thead th,
-  h2 {
+  h2,
+  thead th {
     vertical-align: bottom;
   }
   // Remove top border from thead by default
+  h2,
   caption + thead tr:first-child th,
   caption + thead tr:first-child td,
   colgroup + thead tr:first-child th,
   colgroup + thead tr:first-child td,
   thead:first-child tr:first-child th,
-  thead:first-child tr:first-child td,
-  h2 {
+  thead:first-child tr:first-child td {
     border-top: 0;
   }
   // Account for multiple tbody instances
@@ -77,17 +79,17 @@ table {
 // BORDERED VERSION
 // ----------------
 
-.table-bordered,
-.eventDetails {
+.eventDetails,
+.table-bordered {
   border: 1px solid @tableBorder;
   border-collapse: separate; // Done so we can round those corners!
   *border-collapse: collapse; // IE7 can't round corners anyway
   border-left: 0;
   .border-radius(@baseBorderRadius);
-  th,
-  td,
   h2,
-  .eventDetail {
+  .eventDetail,
+  th,
+  td {
     border-left: 1px solid @tableBorder;
   }
   // Prevent a double border
@@ -102,28 +104,36 @@ table {
   tbody:first-child tr:first-child td {
     border-top: 0;
   }
-  // For first th or td in the first row in the first thead or tbody
+  // For first th/td in the first row in the first thead or tbody
+  h2,
   thead:first-child tr:first-child > th:first-child,
   tbody:first-child tr:first-child > td:first-child,
-  h2 {
+  tbody:first-child tr:first-child > th:first-child {
     .border-top-left-radius(@baseBorderRadius);
   }
+  // For last th/td in the first row in the first thead or tbody
+  h2,
   thead:first-child tr:first-child > th:last-child,
   tbody:first-child tr:first-child > td:last-child,
-  h2 {
+  tbody:first-child tr:first-child > th:last-child {
     .border-top-right-radius(@baseBorderRadius);
   }
-  // For first th or td in the last row in the last thead or tbody
+  // For first th/td (can be either) in the last row in the last thead, tbody, and tfoot
+  .eventDetails:last-child,
   thead:last-child tr:last-child > th:first-child,
   tbody:last-child tr:last-child > td:first-child,
+  tbody:last-child tr:last-child > th:first-child,
   tfoot:last-child tr:last-child > td:first-child,
-  .eventDetails:last-child {
+  tfoot:last-child tr:last-child > th:first-child {
     .border-bottom-left-radius(@baseBorderRadius);
   }
+  // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
+  .eventDetails:last-child,
   thead:last-child tr:last-child > th:last-child,
   tbody:last-child tr:last-child > td:last-child,
-  tfoot:last-child tr:last-child > td:last-child, 
-  .eventDetails:last-child {
+  tbody:last-child tr:last-child > th:last-child,
+  tfoot:last-child tr:last-child > td:last-child,
+  tfoot:last-child tr:last-child > th:last-child {
     .border-bottom-right-radius(@baseBorderRadius);
   }
 
@@ -134,7 +144,6 @@ table {
   tfoot + tbody:last-child tr:last-child td:last-child {
     .border-bottom-right-radius(0);
   }
-
 
   // Special fixes to round the left border on the first td/th
   caption + thead tr:first-child th:first-child,
@@ -159,8 +168,8 @@ table {
 // --------------
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-.table-striped,
-.listing {
+.listing,
+.table-striped {
   tbody {
     > tr:nth-child(odd) > td,
     > tr:nth-child(odd) > th {
@@ -175,14 +184,11 @@ table {
 // Placed here since it has to come after the potential zebra striping
 .table-hover {
   tbody {
-    tr:hover td,
-    tr:hover th {
+    tr:hover > td,
+    tr:hover > th {
       background-color: @tableBackgroundHover;
     }
   }
-}
-.eventDetails .eventDetail:hover {
-  background-color: @tableBackgroundHover;
 }
 
 
@@ -223,32 +229,32 @@ table th[class*="span"],
 // Exact selectors below required to override .table-striped
 
 .table tbody tr {
-  &.success td {
+  &.success > td {
     background-color: @successBackground;
   }
-  &.error td {
+  &.error > td {
     background-color: @errorBackground;
   }
-  &.warning td {
+  &.warning > td {
     background-color: @warningBackground;
   }
-  &.info td {
+  &.info > td {
     background-color: @infoBackground;
   }
 }
 
 // Hover states for .table-hover
 .table-hover tbody tr {
-  &.success:hover td {
+  &.success:hover > td {
     background-color: darken(@successBackground, 5%);
   }
-  &.error:hover td {
+  &.error:hover > td {
     background-color: darken(@errorBackground, 5%);
   }
-  &.warning:hover td {
+  &.warning:hover > td {
     background-color: darken(@warningBackground, 5%);
   }
-  &.info:hover td {
+  &.info:hover > td {
     background-color: darken(@infoBackground, 5%);
   }
 }

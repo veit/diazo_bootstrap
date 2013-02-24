@@ -4,25 +4,27 @@
 
 
 // Base classes
-.label,
-.badge,
 #category span,
-#category span a {
+#category span a,
+.label,
+.badge {
   display: inline-block;
   padding: 2px 4px;
   font-size: @baseFontSize * .846;
   font-weight: bold;
   line-height: 14px; // ensure proper line-height if floated
-  color: @black;
+  color: @white;
   vertical-align: baseline;
-  background-color: @white;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  background-color: @grayLight;
 }
 // Set unique padding and border-radii
 .label {
   .border-radius(3px);
 }
-.badge,
-#category span {
+#category span,
+.badge {
   margin-right: 9px;
   padding-left: 9px;
   padding-right: 9px;
@@ -31,19 +33,20 @@
 
 // Empty labels/badges collapse
 .label,
-.badge,
-#category span {
+.badge {
   &:empty {
     display: none;
   }
 }
 
-// Hover state, but only for links
+// Hover/focus state, but only for links
 a {
-  &.label:hover,
-  &.badge:hover,
   &#category span:hover,
-  &#category span a:hover {
+  &#category span a:hover,
+  &.label:hover,
+  &.label:focus,
+  &.badge:hover,
+  &.badge:focus {
     color: @white;
     text-decoration: none;
     cursor: pointer;
@@ -52,9 +55,9 @@ a {
 
 // Colors
 // Only give background-color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
+#category span,
 .label,
-.badge,
-#category span {
+.badge {
   // Important (red)
   &-important         { background-color: @errorText; }
   &-important[href]   { background-color: darken(@errorText, 10%); }
@@ -74,17 +77,17 @@ a {
 
 // Quick fix for labels/badges in buttons
 .btn {
+  #category span,
   .label,
-  .badge,
-  #category span {
+  .badge {
     position: relative;
     top: -1px;
   }
 }
 .btn-mini {
+  #category span,
   .label,
-  .badge,
-  #category span {
+  .badge {
     top: 0;
   }
 }
