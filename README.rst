@@ -71,7 +71,7 @@ Sphinx
 #. To create a `Sphinx <http://sphinx-doc.org/>`_-based documentation, you can
    install it with buildout::
 
-    $ cd sphinx
+    $ cd diazo_bootstrap/sphinx
     $ python bootstrap.py
     $ ./bin/buildout
 
@@ -88,7 +88,7 @@ Sphinx
     …
 
 #. Additionally we had to add the global navigation to the sidebars. Therefore
-   we edit ``sphinx/source/conf.py``::
+   we edit ``diazo_bootstrap/sphinx/source/conf.py``::
 
     html_sidebars = {
        '**': ['globaltoc.html', 'localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'],
@@ -97,11 +97,12 @@ Sphinx
 #. Next, we will create the documentation in
    ``${buildout:directory}/docs`` with::
 
+    $ cd diazo_bootstrap/sphinx
     $ ./bin/sphinxbuilder
 
 #. Finally, we start the Diazo-Proxy for our Sphinx-Docs::
 
-    $ cd ../diazo/
+    $ cd diazo_bootstrap/diazo/
     $ ./bin/paster serve sphinxproxy.ini
 
    and the Sphinx documentation with the Bootstrap-Theme will be available at
@@ -120,7 +121,7 @@ Plone
 #. To create a `Plone <http://plone.org/>`_-Site, you can
    install it with buildout::
 
-    $ cd plone
+    $ cd diazo_bootstrap/plone
     $ python bootstrap.py
     $ ./bin/buildout
 
@@ -132,7 +133,7 @@ Plone
 
 #. Next, we start the Diazo-Proxy for our Plone-Site::
 
-    $ cd ../diazo/
+    $ cd diazo_bootstrap/diazo
     $ ./bin/paster serve ploneproxy.ini
 
    and the Plone-Site with the Bootstrap-Theme will be available at
@@ -159,7 +160,7 @@ Bootstrap-Updates
 
 #. Then we have to remove the generated files::
 
-    $ cd bootstrap
+    $ cd diazo_bootstrap/bootstrap
     $ make clean
     rm -r bootstrap
 
