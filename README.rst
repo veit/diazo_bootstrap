@@ -109,7 +109,7 @@ Sphinx
 
 
 Further information
-```````````````````
+~~~~~~~~~~~~~~~~~~~
 
 - `collective.recipe.sphinxbuilder <http://pypi.python.org/pypi/collective.recipe.sphinxbuilder>`_
 - `Sphinx documentation <http://sphinx-doc.org/contents.html>`_
