@@ -331,6 +331,14 @@
         <replace css:theme-children=".modal-footer .container ul.footer-links"
                  css:content-children="#portal-siteactions" />
 
+        <!-- Analytics -->
+        <after css:theme=".modal-footer"
+                 css:content="#portal-footer-wrapper script"
+                 css:if-content="" />
+        <after css:theme=".modal-footer"
+                 css:content="#portal-footer-wrapper noscript"
+                 css:if-content="" />
+
         <!-- Contact form -->
         <replace css:theme-children="#content"
                  css:content-children="body.template-contact-info #content"
