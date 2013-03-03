@@ -2,7 +2,9 @@
 Diazo-Bootstrap-Framework
 =========================
 
-.. contents ::
+.. contents::
+   :depth: 3
+   :backlinks: entry
 
 Introduction
 ============
