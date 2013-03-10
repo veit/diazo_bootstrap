@@ -7,7 +7,7 @@
 
     <rules css:if-content="#visual-portal-wrapper">
 
-        <theme href="plonetheme.html" />
+        <theme href="theme.html" />
 
         <!-- Head elements -->
         <replace css:theme="html head title"
@@ -364,7 +364,7 @@
 
     </rules>
 
-    <xi:include href="ploneglossaryrules.xml" />
+    <xi:include href="glossary.xml" />
 
 </rules>
 

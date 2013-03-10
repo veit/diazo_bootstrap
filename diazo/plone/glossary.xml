@@ -9,7 +9,7 @@
 
         <replace css:theme="#content-core"
                  css:content="#content-core"
-                 href="ploneglossarytheme.html"
+                 href="plone/glossary.html"
                  method="document" />
         <replace css:content-children=".glossaryAbcedaire"
                  css:theme-children=".index"
