@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.10.0 (2013-04-01)
+-------------------
+
+- `#20: Add KSS styleguide generator
+  <https://github.com/veit/diazo_bootstrap/issues/20>`_
+  [Veit Schiele]
+
 0.9.4 (2013-02-27)
 ------------------
 
