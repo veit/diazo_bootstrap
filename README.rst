@@ -147,7 +147,7 @@ Living Styleguide
 The Diazo-Bootstrap-Framework uses `KSS <http://warpspire.com/kss/>`_ or more
 precisly `kss-node <http://hughsk.github.com/kss-node/>`_ for generating a
 styleguide. More information about living styleguides you can find in the
-`KSS specification. <https://github.com/kneath/kss/blob/master/SPEC.md>`_.
+`KSS specification <https://github.com/kneath/kss/blob/master/SPEC.md>`_.
 
 To generate or update the living styleguide you have to call ``kss-node``::
 
