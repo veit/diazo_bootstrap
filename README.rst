@@ -141,6 +141,46 @@ Plone
    and the Plone-Site with the Bootstrap-Theme will be available at
    ``http://localhost:8000``.
 
+Living Styleguide
+=================
+
+The Diazo-Bootstrap-Framework uses `KSS <http://warpspire.com/kss/>`_ or more
+precisly `kss-node <http://hughsk.github.com/kss-node/>`_ for generating a
+styleguide. More information about living styleguides you can find in the
+`KSS specification. <https://github.com/kneath/kss/blob/master/SPEC.md>`_.
+
+To generate or update the living styleguide you have to call ``kss-node``::
+
+    $ cd diazo_bootstrap/bootstrap
+    $ node_modules/kss/bin/kss-node less styleguide --l less/bootstrap.less
+    enerating your KSS Styleguide!
+
+     * Source: /Users/veit/projects/vsc/diazo_bootstrap/bootstrap/less
+     * Destination: /Users/veit/projects/vsc/diazo_bootstrap/bootstrap/styleguide
+     * Template: /Users/veit/projects/vsc/diazo_bootstrap/bootstrap/node_modules/kss/lib/template
+
+    ...compiling KSS styles
+    ...parsing your styleguide
+    …
+    ...generating section 1 [ Core variables and mixins ]
+    ...generating section 2 [ Grid system and page structure ]
+    ...generating section 3 [ Base ]
+    ...generating section 4 [ Common ]
+    ...generating section 5 [ Buttons & Alerts ]
+    ...generating section 6 [ Nav ]
+    ...generating section 7 [ Popovers ]
+    ...generating section 8 [ Misc ]
+    ...generating styleguide overview
+    ...compiling additional stylesheets
+     - less/bootstrap.less (less)
+
+    Generation completed successfully!
+
+Now you can view your living styleguide in the web browser with a url similar
+to the following::
+
+    file:///home/veit/diazo_bootstrap/bootstrap/styleguide/index.html
+
 Bootstrap-Updates
 =================
 
