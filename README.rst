@@ -39,6 +39,24 @@ Ubuntu/Debian
 
 Vor Ubuntu 11.04 ist statt ``git`` das Paket ``git-core`` zu installieren.
 
+CentOS/RHEL
+~~~~~~~~~~~
+
+::
+
+    $ sudo yum install make gcc-c++ zlib-devel git openssl-devel wv poppler-utils libjpeg-turbo-devel freetype libxml2-devel libxslt-devel unzip
+    $ sudo -u root -i
+    # curl -O http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz
+    # tar xvzf Python-2.7.5.tgz
+    # cd Python-2.7.5/
+    # ./configure --prefix=/opt/python/2.7.5
+    # make
+    # make install
+    # mkdir /opt/python/2.7.5/Extensions
+    # cd $_
+    # curl -O  http://peak.telecommunity.com/dist/ez_setup.py
+    # /opt/python/2.7.5/bin/python ez_setup.py
+
 OSX
 ~~~
 
