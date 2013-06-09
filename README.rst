@@ -37,7 +37,7 @@ Ubuntu/Debian
 
     $ sudo apt-get install build-essential git python2.7 python2.7-dev python-setuptool
 
-Vor Ubuntu 11.04 ist statt ``git`` das Paket ``git-core`` zu installieren.
+Before Ubuntu 11.04 the package ``git-core`` has to be installed instead of ``git``.
 
 CentOS/RHEL
 ~~~~~~~~~~~
